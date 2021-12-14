@@ -7,7 +7,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <version>1.0-SNAPSHOT</version>
-
+  <packaging>war</packaging>
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -69,6 +69,18 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+<!-- Maven Plugin for Tomcat -->
+	<plugin>
+		<groupId>org.codehaus.cargo</groupId>
+		<artifactId>cargo-maven2-plugin</artifactId>
+		<version>1.7.6</version>
+		<configuration>
+			<container>
+				<containerId>tomcat9x</containerId>
+				<type>embedded</type>
+			</container>
+		</configuration>
+	</plugin>
       </plugins>
     </pluginManagement>
   </build>
