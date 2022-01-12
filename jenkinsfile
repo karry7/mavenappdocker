@@ -9,7 +9,7 @@ agent any
 stages {
  stage('Build') {
  steps {
- sh ‘mvn package'
+ sh 'mvn clean install package' 
  }
  }
 stage('Building image') {
