@@ -5,21 +5,13 @@ package com.mycompany.app;
  *
  */
 
-@SpringBootApplication
-public class App extends SpringBootServletInitializer
+public class App 
 {
 
 
-@Override
-5
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-6
-        return application.sources(App.class);
-7
-    }
     public static void main( String[] args )
     {
-     SpringApplication.run(App.class, args);
+    
         System.out.println( "Hello World!" );
     }
 }
