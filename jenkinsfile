@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                                                    jenkinsfile                                                                                              
+                                                                                             
 pipeline {
 environment {
 registry = "karima7/repo2"
